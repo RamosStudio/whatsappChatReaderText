@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <title>قارئ محادثة واتساب</title>
+</head>
+<body>
+  <header>💬 قارئ محادثة واتساب</header>
+
+  <div class="controls">
+    <!-- الصف الأول -->
+    <div class="row">
+      <label for="fileInput" class="file-label">📂 ملف</label>
+      <input type="file" id="fileInput" accept=".txt" />
+      <button class="btn" onclick="toggleDark()">🌙/☀️</button>
+    </div>
+
+    <!-- الصف الثاني -->
+    <div class="row icons">
+      <input type="text" id="searchInput" class="search" placeholder="🔍..." />
+      <button class="btn" onclick="searchChat()">🔍</button>
+      <button class="btn" onclick="prevResult()">⏮️</button>
+      <button class="btn" onclick="nextResult()">⏭️</button>
+      <button class="btn" onclick="scrollTopChat()">⬆️</button>
+      <button class="btn" onclick="scrollBottomChat()">⬇️</button>
+    </div>
+  </div>
+
+  <div id="chat" aria-live="polite"></div>
+
+ <script src="assets/script.js"></script>
+</body>
+</html>
